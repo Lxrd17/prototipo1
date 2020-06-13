@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta name="theme-color" content="#FF0000">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gacetis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://lxrd17.github.io/developers/slim.min.js"></script>
+    <script src="https://lxrd17.github.io/developers/twee.min.js"></script>
+</head>
+<body class="demo">
+    <div id="demo-content">
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <div id="content">
+            <div class="entrada">
+                <img class="eimg" src="assets/img/entrada.jpg" alt="">
+                <h1 class="gaceta">Ga<span class="typed"></span></h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Social</li>
+                    <li>Cultural</li>
+                    <li>Deportivo</li>
+                    <li>Educación</li>
+                </ul>
+            </div>
+            <div class="institucion">
+                <img src="assets/img/e1.jpg" alt="">
+            </div>
+            <div class="covid">
+                <img src="assets/img/c1.jpg" alt=""><br><br><br><br><br>
+                <div class="box">
+                    <h1 class="title">Protocolo</h1>
+                    <p class="paragraph">De seguridad para evitar más contagios</p>
+                </div>
+            </div>
+            <div class="deporte">
+                <img src="assets/img/a2.jfif" alt="">
+                <div class="box">
+                    <h1 class="title">Deporte</h1>
+                    <p class="pragraph">Todo lo relacionado al deporte de la institución.</p>
+                </div>
+            </div>
+            <div class="education">
+                <img src="assets/img/c3.jpg" alt="">
+                <div class="box">
+                    <h1 class="title">Educación</h1>
+                    <p class="pragraph">Todo lo refente a la educación de la institución.</p>
+                </div>
+            </div>
+            <div class="cultural"> 
+                <img src="assets/img/c4.jpg" alt="">
+                <div class="box">
+                    <h1 class="title">Cultural</h1>
+                    <p class="paragraph">¿Cómo se comporta <br>
+                         la comunidad estudiantil <br> con los protocolos?</p>
+                </div>
+            </div>
+            <div class="social">
+                <img src="assets/img/c5.jpg" alt="">
+                <div class="box">
+                    <h1 class="title">Social</h1>
+                    <p class="paragraph">Lugar interesante para la <br> comunidad estudiantil</p>
+                </div>
+            </div>
+            <div class="redes">
+                <h2 class="redestext">Sitio <br>--> </h2>
+                <img src="assets/img/icons/icong.png" alt="">
+                <h2 class="redestext">Twitter <br>--></h2>
+                <img src="assets/img/icons/icont.png" alt="">
+                <h2 class="redestext">Facebook <br>--> </h2>
+                <img src="assets/img/icons/iconf.png" alt="">
+            </div>
+            <div class="progressbar"></div>
+        <script>
+             $(window).scroll(function() {
+                var scroll = $(window).scrollTop(),
+                  dh = $(document).height(),
+                  wh = $(window).height();
+            scrollPercent = (scroll / (dh - wh)) * 100;
+            $(".progressbar").css("height", scrollPercent + "%");
+             });
+            const cursor = document.querySelector('.cursor');
+              document.addEventListener('mousemove', e => {
+              cursor.setAttribute("style", "top: "+(e.pageY - 1)+"px; left: "+(e.pageX - 10)+"px;")
+              })
+              </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="asstets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src='assets/js/main.js'></script>
+    <script src="assets/js/vendor/typed.js@2.0.11"></script>
+    <script src="assets/js/vendor/type.js"></script>
+</body>
+</html>
